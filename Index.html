@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue - Template Syntax</title>
+    <script src="vue.js"></script>
+
+</head>
+<body>
+
+
+<div id="app">
+    <ul>
+        <li>
+            <p>Message: {{ msg }}</p>
+        </li>
+        <li>
+            <p v-once>This will never change : {{msg}}</p>
+        </li>
+        <li>
+            <p>Using mustaches : {{rawHtml}}</p>
+        </li>
+        <li>
+            <p>Using v-html directives : <span v-html="rawHtml"></span></p>
+        </li>
+        <li>
+            <button v-bind:disabled="isButtonDisabled">Button</button>
+        </li>
+        <li>
+            <p v-if="seen">Now you see me</p>
+        </li>
+        <li>
+            <a v-bind:href="url" target="_blank">Google</a>
+        </li>
+        <li>
+            <a :href="url" target="_blank">Google (ShortHand)</a>
+        </li>
+    </ul>
+
+</div>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
