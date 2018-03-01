@@ -1,0 +1,1 @@
+# VueSample-Template-Syntax
